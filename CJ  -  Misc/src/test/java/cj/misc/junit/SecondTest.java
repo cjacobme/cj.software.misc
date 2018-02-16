@@ -8,6 +8,7 @@ import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
 import cj.misc.junit.group.FastRunningTests;
+import cj.misc.junit.group.IntegerationTests;
 import cj.misc.junit.group.SlowRunningTests;
 
 public class SecondTest
@@ -34,5 +35,16 @@ public class SecondTest
 		this.logger.info("SecondTest.slowMethod() now falls asleep...");
 		TimeUnit.SECONDS.sleep(8);
 		this.logger.info("SecondTest.slowMethod() woke up");
+	}
+
+	@Test
+	@Category(IntegerationTests.class)
+	public void interactWithLegacySystem() throws InterruptedException
+	{
+		for (int bI = 0; bI < 20; bI++)
+		{
+			this.logger.info("this is the integration test");
+			TimeUnit.SECONDS.sleep(1);
+		}
 	}
 }
