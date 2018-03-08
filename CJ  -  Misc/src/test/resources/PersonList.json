@@ -1,0 +1,13 @@
+{
+    "info" : "ich hab was gefunden",
+    "persons" : [
+        {
+            "first-name" : "Christian",
+            "last-name" : "Jacob"
+        },
+        {
+            "first-name" : "Barbara",
+            "last-name" : "Jacob"
+        }
+    ]
+}
